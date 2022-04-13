@@ -9,7 +9,7 @@ function ContactCard(props) {
               <div className="card-header">
                   <div className='row'>
                       <div className='col-10'>
-                        <Link to={{pathname:`/contacts/${id}`,state:{contact:props.contact}}}>
+                        <Link to="/contact" state={{contact:props.contact}}>
                             <i className="bi bi-person-circle" style={{ fontSize: 50}}></i>
                             <h1 style={{display:'inline-block'}}>{firstName} {lastName}</h1>
                         </Link>

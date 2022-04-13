@@ -71,7 +71,7 @@ function App() {
         <Routes>
           <Route path="/add" exact element={<AddContact addContactHandler={addContactHandler}/>} />
           <Route path="/contacts" exact element={<ContactList contacts={searchTerm.length<1?contacts:searchResult} term={searchTerm} removeContactHandler={removeContactHandler}  searchKeyword={searchHandler}/>} />
-          <Route path="/contacts/:id" exact element={<ContactDetails />} />
+          <Route path="/contact" exact element={<ContactDetails />} />
           <Route path="/edit" exact element={<EditContact updateContactHandler={updateContactHandler}/>} />
           <Route path="/" exact element={<ContactList contacts={searchTerm.length<1?contacts:searchResult} term={searchTerm} removeContactHandler={removeContactHandler} searchKeyword={searchHandler}/>} />
         </Routes>
